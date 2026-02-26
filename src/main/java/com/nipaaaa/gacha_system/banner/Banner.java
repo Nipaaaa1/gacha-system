@@ -18,7 +18,8 @@ public class Banner {
   protected Banner() {
   }
 
-  public Banner(double bannerSsrRate, int softPity, int hardPity) {
+  public Banner(String name, double bannerSsrRate, int softPity, int hardPity) {
+    this.name = name;
     this.bannerSsrRate = bannerSsrRate;
     this.softPity = softPity;
     this.hardPity = hardPity;

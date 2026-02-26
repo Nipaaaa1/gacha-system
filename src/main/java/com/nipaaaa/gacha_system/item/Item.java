@@ -25,7 +25,7 @@ public class Item {
   protected Item() {
   }
 
-  public Item(String name, Rarity rarity, Banner banner, int weight) {
+  public Item(String name, Rarity rarity, int weight, Banner banner) {
     this.name = name;
     this.rarity = rarity;
     this.banner = banner;
