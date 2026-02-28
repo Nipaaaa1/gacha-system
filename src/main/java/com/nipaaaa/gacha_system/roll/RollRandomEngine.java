@@ -3,9 +3,12 @@ package com.nipaaaa.gacha_system.roll;
 import java.util.List;
 import java.util.Random;
 
+import org.springframework.stereotype.Component;
+
 import com.nipaaaa.gacha_system.banner.Banner;
 import com.nipaaaa.gacha_system.item.Item;
 
+@Component
 public class RollRandomEngine {
   private final Random random;
 
