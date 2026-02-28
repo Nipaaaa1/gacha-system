@@ -29,7 +29,7 @@ public class DataInitializer implements CommandLineRunner {
   @Override
   public void run(String... args) {
 
-    User user = new User("Jamal", 10000);
+    User user = new User("Jamal", 14400);
     userRepository.save(user);
 
     Banner banner = new Banner("Standard Banner", 0.6, 70, 90);

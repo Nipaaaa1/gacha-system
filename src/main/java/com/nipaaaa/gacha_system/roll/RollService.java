@@ -78,8 +78,10 @@ public class RollService {
 
         if (rollRandomEngine.rollForSsr(ssrRate)) {
           obtainedItem = rollRandomEngine.pickByWeight(ssrItems);
+          userBannerState.resetPity();
         } else {
           obtainedItem = rollRandomEngine.pickByWeight(nonSsrItems);
+          userBannerState.increasePity();
         }
       }
       rollHistoryRepository.save(new RollHistory(user, banner, obtainedItem));
